@@ -79,7 +79,7 @@
 ### Validate
 검증 작업 
 
-- [ ] validateNumber() : 숫자인지 검증
+- [X] validateNumber() : 숫자인지 검증
 - [ ] validateProduct() : 상품명 형식 검증
 
 
