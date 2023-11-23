@@ -67,7 +67,8 @@
 ### VendingMachineCoin
 자판기가 보유한 금액(동전) 
 
-- [X] changeCoin() : 잔돈의 코인을 계산한다. 
+- [X] getCoins() : 현재 보유한 동전 반환
+- [X] changeCoins() : 잔돈의 코인을 계산 
 
 
 ### Product 

@@ -1,6 +1,7 @@
 package model;
 
 import constant.Coin;
+import sun.awt.image.ImageWatched;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -16,8 +17,15 @@ public class VendingMachineCoin {
     this.coins = coins;
   }
 
+  // 현재 보유한 동전 반환
+  public Map<Coin, Integer> getCoins() {
+    return new LinkedHashMap<>(coins);
+  }
+
+
+
   // 잔돈에 따른 동전 반환
-  public Map<Coin, Integer> changeCoin(int money) {
+  public Map<Coin, Integer> changeCoins(int money) {
     Map<Coin, Integer> change = new LinkedHashMap<>();
     for (Coin coin : Coin.values()) {
       Integer availableCoins = coins.get(coin);
