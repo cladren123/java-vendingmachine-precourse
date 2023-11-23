@@ -58,6 +58,10 @@
 
 
 
+### VendingMachineCoinService 
+자판기가 보유한 금액에 관한 비즈니스 로직 처리
+
+- [X] inputVendingMachineMoney() : 자판기가 보유한 금액 입력
 
 ### VendingMachineCoin
 자판기가 보유한 금액(동전) 
