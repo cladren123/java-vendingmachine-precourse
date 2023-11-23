@@ -59,8 +59,8 @@
 
 
 
-### VendingMachineMoney
-자판기가 보유한 금액(잔돈) 
+### VendingMachineCoin
+자판기가 보유한 금액(동전) 
 
 - [ ] remainCoin() : 금액을 통해 보유한 동전 계산
 - [ ] ChangeCoin() : 잔돈의 코인을 계산한다. 
