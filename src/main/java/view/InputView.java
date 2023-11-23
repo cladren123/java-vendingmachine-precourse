@@ -14,4 +14,10 @@ public class InputView {
     return Console.readLine().trim();
   }
 
+  // 상품 입력 받습니다.
+  public static String inputProduct() {
+    System.out.println(InputMessage.PRODUCT.getMessage());
+    return Console.readLine().trim();
+  }
+
 }
