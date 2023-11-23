@@ -15,6 +15,10 @@ public enum Coin {
         this.amount = amount;
     }
 
+    public int getAmount() {
+        return amount;
+    }
+
     // 추가 기능 구현
 
     // 금액이 들어오면 최소 동전 개수 반환
