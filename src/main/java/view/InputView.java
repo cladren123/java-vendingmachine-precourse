@@ -20,4 +20,10 @@ public class InputView {
     return Console.readLine().trim();
   }
 
+  // 투입 금액 입력 받습니다.
+  public static String inputCustomerMoney() {
+    System.out.println(InputMessage.CUSTOMER_MONEY.getMessage());
+    return Console.readLine().trim();
+  }
+
 }

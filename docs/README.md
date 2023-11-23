@@ -32,7 +32,7 @@
 
 - [X] inputVendingMachineMoney() : 자판기가 보유한 금액 입력
 - [X] inputProduct() : 상품명, 가격, 수량 입력
-- [ ] inputCustomerMoney() : 투입 금액 입력 
+- [X] inputCustomerMoney() : 투입 금액 입력 
 - [ ] inputBuyProduct() : 구매할 상품명 입력 
 
 
