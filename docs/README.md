@@ -47,6 +47,7 @@
 ### VendingMachineService
 자판기에 관한 비즈니스 로직 처리 
 
+- [X] getVendingMachineCoins() : 현재 보유한 동전 반환
 - [ ] inputBuyProduct() : 구매할 상품명 입력
 
 
