@@ -26,4 +26,10 @@ public class InputView {
     return Console.readLine().trim();
   }
 
+  // 구매할 상품명 입력 받습니다.
+  public static String inputBuyProduct() {
+    System.out.println(InputMessage.BUY_PRODUCT.getMessage());
+    return Console.readLine().trim();
+  }
+
 }
