@@ -76,9 +76,24 @@
 사용자가 투입한 금액 
 
 
+### Validate
+검증 작업 
+
+- [ ] validateNumber() : 숫자인지 검증
+- [ ] validateProduct() : 상품명 형식 검증
+
+
+### Converter
+변환 작업 
+
+- [ ] inputToProduct() : 상품 입력을 상품 형식으로 변환
+
+
 ### Enum 
 enum 클래스 모음
 
 - [ ] Coin : 동전 상수 관리
 - [ ] InputMessage : 입력 메세지 관리
 - [ ] OutputMessage : 출력 메세지 관리
+- [ ] ErrorMessage : 에러 메시지 관리 
+
