@@ -93,7 +93,7 @@
 enum 클래스 모음
 
 - [ ] Coin : 동전 상수 관리
-- [ ] InputMessage : 입력 메세지 관리
+- [X] InputMessage : 입력 메세지 관리
 - [ ] OutputMessage : 출력 메세지 관리
 - [ ] ErrorMessage : 에러 메시지 관리 
 
