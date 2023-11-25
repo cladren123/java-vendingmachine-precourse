@@ -19,7 +19,6 @@ public class VendingMachineService {
     return new VendingMachineCoin(coins);
   }
 
-
   // 현재 보유한 동전 반환
   public Map<Coin, Integer> getVendingMachineCoins(VendingMachineCoin vendingMachineCoin) {
     return vendingMachineCoin.getCoins();
