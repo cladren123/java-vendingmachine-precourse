@@ -6,7 +6,9 @@ import java.util.PrimitiveIterator;
 // 숫자 관리
 public enum NumberConstant {
 
-  MONEY_UNIT(10);
+  MONEY_UNIT(10),
+  PRODUCT_FORMAT_SIZE(3);
+
 
   private final int number;
 
