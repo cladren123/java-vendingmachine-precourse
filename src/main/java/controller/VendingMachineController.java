@@ -6,10 +6,12 @@ import view.InputView;
 
 public class VendingMachineController {
 
+  private final VendingMachineService vendingMachineService = new VendingMachineService();
+
   // 프로그램 시작
   public static void start() {
     VendingMachineCoin vendingMachineCoin = inputVendingMachineMoney();
-    VendingMachineService vendingMachineService = new VendingMachineService(vendingMachineCoin);
+
   }
 
 

@@ -4,9 +4,12 @@ import validate.Validate;
 
 public class Converter {
 
-  // String을 Integer로 변환
-  public static Integer StringToNumber(String input) {
+  // input을 money에 맞는지 변환
+  public static Integer inputToMoney(String input) {
     Validate.validateNumber(input);
-    return Integer.parseInt(input);
+    int money = Integer.parseInt(input);
+    Validate.validatePositiveNumber(money);
+    Validate.validateDivisibleByTen(money);
+    return money;
   }
 }

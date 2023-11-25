@@ -89,7 +89,7 @@
 ### Converter
 변환 작업 
 
-- [X] StringToNumber() : 문자열을 숫자로 변환
+- [X] inputToMoney() : 입력값을 금액으로 변환
 - [ ] inputToProduct() : 상품 입력을 상품 형식으로 변환
 
 
