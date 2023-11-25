@@ -1,8 +1,6 @@
 package model;
 
 import constant.Coin;
-import sun.awt.image.ImageWatched;
-
 import java.util.LinkedHashMap;
 import java.util.Map;
 

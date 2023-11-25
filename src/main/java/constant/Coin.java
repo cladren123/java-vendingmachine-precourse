@@ -27,7 +27,7 @@ public enum Coin {
 
         for(Coin coin : Coin.values()) {
             int count = money / coin.amount;
-            money -= money * coin.amount;
+            money -= count * coin.amount;
             result.put(coin, count);
         }
 

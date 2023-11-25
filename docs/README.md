@@ -24,6 +24,7 @@
 
 - [ ] start() : 프로그램 시작 
 - [X] inputVendingMachineMoney() : 자판기가 보유한 금액 입력
+- [X] outputVendingMachineCoin() : 자판기가 보유한 동전 출력
 - [ ] inputProduct() : 상품명과 가격, 수량 입력
 - [ ] inputCustomerMoney() : 투입 금액 입력 
 - [ ] inputBuyProduct() : 구매할 상품명 입력 
@@ -40,7 +41,7 @@
 ### OutputView
 결과 화면 출력
 
-- [ ] outputVendingMachineMoney() : 자판기가 보유한 동전 출력 
+- [X] printVendingMachineCoin() : 자판기가 보유한 동전 출력 
 - [ ] outputChange() : 잔돈 출력
 
 
@@ -96,7 +97,7 @@
 ### Enum 
 enum 클래스 모음
 
-- [ ] Coin : 동전 상수 관리
+- [X] Coin : 동전 상수 관리
 - [X] NumberConstant : 숫자 관리 
 - [X] InputMessage : 입력 메세지 관리
 - [X] OutputMessage : 출력 메세지 관리

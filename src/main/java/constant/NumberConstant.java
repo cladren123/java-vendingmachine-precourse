@@ -15,6 +15,6 @@ public enum NumberConstant {
   }
 
   public int getNumber() {
-    return number;\
+    return number;
   }
 }
