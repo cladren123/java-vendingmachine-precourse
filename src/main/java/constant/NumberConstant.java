@@ -7,7 +7,8 @@ import java.util.PrimitiveIterator;
 public enum NumberConstant {
 
   MONEY_UNIT(10),
-  PRODUCT_FORMAT_SIZE(3);
+  PRODUCT_FORMAT_SIZE(3),
+  ITEM_LOCATION(1);
 
 
   private final int number;
