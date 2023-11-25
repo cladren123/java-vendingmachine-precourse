@@ -1,6 +1,7 @@
 package converter;
 
 import constant.Delimiter;
+import constant.NumberConstant;
 import validate.Validate;
 
 import java.util.ArrayList;
@@ -28,7 +29,8 @@ public class Converter {
 
   // String의 앞 [ 와 뒤 ] 을 제거
   public static String inputSubstring(String input) {
-    return input.substring(1, input.length() - 1);
+    int location = NumberConstant.ITEM_LOCATION.getNumber();
+    return input.substring(location, input.length() - location);
   }
 
 
