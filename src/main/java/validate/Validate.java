@@ -3,6 +3,8 @@ package validate;
 import constant.ErrorMessage;
 import constant.NumberConstant;
 
+import java.util.List;
+
 /**
  * 검증 작업
  */
@@ -35,6 +37,13 @@ public class Validate {
   // 아이템이 []로 감싸져 있는지 검증
   public static void validateBracket(String input) {
     if(!input.startsWith("[") || !input.startsWith("]")) {
+      throw new IllegalArgumentException(ErrorMessage.PRODUCT_FORM.getMessage());
+    }
+  }
+
+  // 아이템이 3개로 이루어져 있는지 검증
+  public static void validateItemNumber(List<String> input) {
+    if(input.size() != NumberConstant.PRODUCT_FORMAT_SIZE.getNumber()) {
       throw new IllegalArgumentException(ErrorMessage.PRODUCT_FORM.getMessage());
     }
   }

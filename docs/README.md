@@ -86,6 +86,7 @@
 - [X] validatePositiveNumber() : 양수인지 검증
 - [X] validateDivisibleByTen() : 10의 단위로 나누어 떨어지는지 검증
 - [X] validateBracket() : []로 감싸져 있는지 검증
+- [X] validateItemNumber() : 상품 입력 3개인지 확인
 - [ ] validateProduct() : 상품명 형식 검증
 
 ### Converter
