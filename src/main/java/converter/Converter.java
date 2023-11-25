@@ -1,10 +1,16 @@
 package converter;
 
+import constant.Delimiter;
 import validate.Validate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+/**
+ * 변환 작업을 처리하는 클래스
+ * 유틸 성격이므로 static 사용
+ */
 
 public class Converter {
 
@@ -15,12 +21,17 @@ public class Converter {
     return Integer.parseInt(input);
   }
 
-  // input을 상품명, 가격, 수량으로 구분
-  public static List<String> inputToProduct(String input) {
-    return new ArrayList<>(Arrays.asList(input.split(";")));
+  // String을 아이템 단위로 나눔 (;)
+  public static List<String> inputSplitItemDelimiter(String input) {
+    return new ArrayList<>(Arrays.asList(input.split(Delimiter.ITEM_SEPARATOR.getSymbol())));
   }
 
-  
+  // String을 세부 단위로 나눔 (,)
+  public static List<String> inputSplitDetailDelimiter(String input) {
+    return new ArrayList<>(Arrays.asList(input.split(Delimiter.DETAIL_SEPARATOR.getSymbol())));
+  }
+
+
 
 
 

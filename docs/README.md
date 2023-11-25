@@ -93,8 +93,9 @@
 변환 작업 
 
 - [X] inputToMoney() : 입력값을 금액으로 변환
-- [X] 
-- [ ] inputToProduct() : 상품 입력을 상품 형식으로 변환
+- [X] inputSplitItemDelimiter() : 입력값을 아이템 단위로 나눔
+- [X] inputSplitDetailDelimiter() : 입력값을 아이템 세부 단위로 나눔
+
 
 
 ### Enum 
