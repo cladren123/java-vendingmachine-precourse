@@ -58,8 +58,6 @@
 - [ ] buyProduct() : 상품 수량만큼 금액을 뺀다.
 - [ ] checkCustomerMoney() : 투입 금액이 최저 가격보다 적거나, 모든 상품이 소진된 경우 바로 잔돈을 돌려준다.
 
-
-
 ### VendingMachineService 
 자판기가 보유한 금액에 관한 비즈니스 로직 처리
 
@@ -72,23 +70,21 @@
 - [X] getCoins() : 현재 보유한 동전 반환
 - [X] changeCoins() : 잔돈의 코인을 계산 
 
-
 ### Product 
 상품 정보 관리 
 
 - [ ] buyProduct() : 상품을 사고 남은 돈을 반환 
 
-
 ### CustomerMoney 
 사용자가 투입한 금액 
-
 
 ### Validate
 검증 작업 
 
 - [X] validateNumber() : 숫자인지 검증
+- [X] validatePositiveNumber() : 양수인지 검증
+- [ ] validateDivisibleByTen() : 10의 단위로 나누어 떨어지는지 검증
 - [ ] validateProduct() : 상품명 형식 검증
-
 
 ### Converter
 변환 작업 
