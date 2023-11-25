@@ -6,7 +6,9 @@ package constant;
  */
 public enum Delimiter {
   ITEM_SEPARATOR(";"),
-  DETAIL_SEPARATOR(",");
+  DETAIL_SEPARATOR(","),
+  ITEM_START("["),
+  ITEM_END("]");
 
   private final String symbol;
 
