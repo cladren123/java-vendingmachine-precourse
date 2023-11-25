@@ -2,6 +2,10 @@ package converter;
 
 import validate.Validate;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Converter {
 
 
@@ -12,6 +16,11 @@ public class Converter {
   }
 
   // input을 상품명, 가격, 수량으로 구분
+  public static List<String> inputToProduct(String input) {
+    return new ArrayList<>(Arrays.asList(input.split(";")));
+  }
+
+  
 
 
 

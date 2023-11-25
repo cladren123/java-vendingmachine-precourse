@@ -93,6 +93,7 @@
 변환 작업 
 
 - [X] inputToMoney() : 입력값을 금액으로 변환
+- [X] 
 - [ ] inputToProduct() : 상품 입력을 상품 형식으로 변환
 
 
@@ -101,6 +102,7 @@ enum 클래스 모음
 
 - [X] Coin : 동전 상수 관리
 - [X] NumberConstant : 숫자 관리 
+- [X] Delimiter : 구분자 관리
 - [X] InputMessage : 입력 메세지 관리
 - [X] OutputMessage : 출력 메세지 관리
 - [X] ErrorMessage : 에러 메시지 관리 
