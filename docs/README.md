@@ -94,6 +94,7 @@
 
 - [X] inputToMoney() : 입력값을 금액으로 변환
 - [X] inputSplitItemDelimiter() : 입력값을 아이템 단위로 나눔
+- [X] inputSubstring() : 아이템의 앞 뒤 제거 
 - [X] inputSplitDetailDelimiter() : 입력값을 아이템 세부 단위로 나눔
 
 

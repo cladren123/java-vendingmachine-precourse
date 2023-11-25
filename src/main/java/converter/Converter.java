@@ -26,6 +26,12 @@ public class Converter {
     return new ArrayList<>(Arrays.asList(input.split(Delimiter.ITEM_SEPARATOR.getSymbol())));
   }
 
+  // String의 앞 [ 와 뒤 ] 을 제거
+  public static String inputSubstring(String input) {
+    return input.substring(1, input.length() - 1);
+  }
+
+
   // String을 세부 단위로 나눔 (,)
   public static List<String> inputSplitDetailDelimiter(String input) {
     return new ArrayList<>(Arrays.asList(input.split(Delimiter.DETAIL_SEPARATOR.getSymbol())));
