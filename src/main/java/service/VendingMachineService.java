@@ -5,6 +5,7 @@ import converter.Converter;
 import model.VendingMachineCoin;
 import validate.Validate;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -26,6 +27,20 @@ public class VendingMachineService {
   // 현재 보유한 동전 반환
   public Map<Coin, Integer> getVendingMachineCoins(VendingMachineCoin vendingMachineCoin) {
     return vendingMachineCoin.getCoins();
+  }
+
+  // 상품 입력
+  public void inputProduct(String input) {
+    List<String> items = Converter.inputSplitItemDelimiter(input);
+    for(String item : items) {
+      Validate.validateBracket(item);
+      String substringItem = Converter.inputSubstring(item);
+      List<String> product = Converter.inputSplitDetailDelimiter(substringItem);
+      Validate.validateItemNumber(product);
+
+
+    }
+
   }
 
 
