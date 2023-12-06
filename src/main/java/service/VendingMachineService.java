@@ -37,10 +37,7 @@ public class VendingMachineService {
       String substringItem = Converter.inputSubstring(item);
       List<String> product = Converter.inputSplitDetailDelimiter(substringItem);
       Validate.validateItemNumber(product);
-
-
     }
-
   }
 
 
