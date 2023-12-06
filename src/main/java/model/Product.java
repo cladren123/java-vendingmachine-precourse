@@ -19,7 +19,7 @@ public class Product {
   }
 
 
-  // 물건 구매
+  // 상품을 사고 남은 돈을 반환
   public int buy(int money) {
     if(money >= cost) {
       quantity = -1;
