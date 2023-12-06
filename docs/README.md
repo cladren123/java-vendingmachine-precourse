@@ -74,7 +74,9 @@
 ### VendingMachine
 자판기가 보유한 상품들과 동전을 가진 클래스 
 
-- [] checkStatus() : 남은 금액이 최저 가격보다 적거나, 모든 상품이 소진된 경우 확인 
+- [X] checkStatus() : 남은 금액이 최저 가격보다 적거나, 모든 상품이 소진된 경우 확인
+- [X] checkMoney() : 남은 금액과 최저 가격 비교 
+- [X] checkQuantity() : 모든 상품이 소진된지 확인 
 - [] buy() : 상품명을 입력하면 상품 구매
 
 ### Product 
