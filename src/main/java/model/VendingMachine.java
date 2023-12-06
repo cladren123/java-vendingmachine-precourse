@@ -1,5 +1,7 @@
 package model;
 
+import constant.ErrorMessage;
+
 import java.util.Collections;
 import java.util.List;
 
@@ -27,6 +29,15 @@ public class VendingMachine {
   public boolean checkQuantity() {
     return products.stream()
             .anyMatch(Product::hasQuantity);
+  }
+
+  // 물건 구매
+  public int buy(String name, int money) {
+    return products.stream()
+            .filter(product -> product.sameName(name))
+            .findFirst()
+            .map(product -> product.buy(money))
+            .orElseThrow(() -> new IllegalArgumentException(ErrorMessage.PRODUCT_NONE.getMessage()));
   }
 
 

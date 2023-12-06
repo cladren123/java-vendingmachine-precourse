@@ -42,6 +42,11 @@ public class Product implements Comparable<Product> {
     return quantity > 0;
   }
 
+  // 상품의 이름이 맞는지 확인
+  public boolean sameName(String name) {
+    return this.name.equals(name);
+  }
+
   // 가격 오름차순
   public int compareTo(Product p) {
     return this.cost - p.cost;
