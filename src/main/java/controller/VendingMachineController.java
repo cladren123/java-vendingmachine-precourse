@@ -1,11 +1,13 @@
 package controller;
 
 import constant.Coin;
+import model.Product;
 import model.VendingMachineCoin;
 import service.VendingMachineService;
 import view.InputView;
 import view.OutputView;
 
+import java.util.List;
 import java.util.Map;
 
 public class VendingMachineController {
@@ -17,6 +19,7 @@ public class VendingMachineController {
   public void start() {
     VendingMachineCoin vendingMachineCoin = inputVendingMachineMoney();
     outputVendingMachineCoin(vendingMachineCoin);
+    inputProducts();
 
   }
 
@@ -31,5 +34,14 @@ public class VendingMachineController {
     Map<Coin, Integer> coins = vendingMachineService.getVendingMachineCoins(vendingMachineCoin);
     outputView.printVendingMachineCoin(coins);
   }
+
+  // 상품 입력
+  public void inputProducts() {
+    String input = InputView.inputProduct();
+    List<Product> products = vendingMachineService.inputProducts(input);
+  }
+
+  
+
 
 }

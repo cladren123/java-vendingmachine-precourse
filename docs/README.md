@@ -25,7 +25,7 @@
 - [ ] start() : 프로그램 시작 
 - [X] inputVendingMachineMoney() : 자판기가 보유한 금액 입력
 - [X] outputVendingMachineCoin() : 자판기가 보유한 동전 출력
-- [ ] inputProduct() : 상품명과 가격, 수량 입력
+- [X] inputProducts() : 상품명과 가격, 수량 입력
 - [ ] inputCustomerMoney() : 투입 금액 입력 
 - [ ] inputBuyProduct() : 구매할 상품명 입력 
 
