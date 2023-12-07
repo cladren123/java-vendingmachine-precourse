@@ -19,6 +19,7 @@ public class OutputView {
               OutputMessage.VENDING_MACHINE_COIN_FORMAT.getMessage(), coin.getAmount(), coins.get(coin)
       ));
     }
+    System.out.println();
   }
 
 

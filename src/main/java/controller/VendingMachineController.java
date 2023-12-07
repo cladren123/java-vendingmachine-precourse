@@ -1,7 +1,6 @@
 package controller;
 
 import constant.Coin;
-import jdk.internal.util.xml.impl.Input;
 import model.Product;
 import model.VendingMachineCoin;
 import service.VendingMachineService;
