@@ -64,6 +64,8 @@
 
 - [X] inputVendingMachineMoney() : 자판기가 보유한 금액 입력
 - [X] getVendingMachineCoins() : 자판기의 보유 코인 반환
+- [X] inputProducts() : 메뉴 입력 
+- [X] listToProduct() : List<String>을 Product로 변환 
 
 ### VendingMachineCoin
 자판기가 보유한 금액(동전) 

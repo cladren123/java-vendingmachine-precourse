@@ -2,6 +2,7 @@ package converter;
 
 import constant.Delimiter;
 import constant.NumberConstant;
+import model.Product;
 import validate.Validate;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class Converter {
 
 
   // input을 money에 맞는지 변환
-  public static Integer inputToMoney(String input) {
+  public static Integer stringToInteger(String input) {
     return Integer.parseInt(input);
   }
 
@@ -38,6 +39,10 @@ public class Converter {
   public static List<String> inputSplitDetailDelimiter(String input) {
     return new ArrayList<>(Arrays.asList(input.split(Delimiter.DETAIL_SEPARATOR.getSymbol())));
   }
+
+
+
+
 
 
 

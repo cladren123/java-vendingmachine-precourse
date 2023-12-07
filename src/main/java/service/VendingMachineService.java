@@ -2,9 +2,11 @@ package service;
 
 import constant.Coin;
 import converter.Converter;
+import model.Product;
 import model.VendingMachineCoin;
 import validate.Validate;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -17,7 +19,7 @@ public class VendingMachineService {
   // 금액을 입력하면 자판기가 보유한 동전으로 변환
   public static VendingMachineCoin inputVendingMachineMoney(String input) {
     Validate.validateNumber(input);
-    Integer money = Converter.inputToMoney(input);
+    Integer money = Converter.stringToInteger(input);
     Validate.validatePositiveNumber(money);
     Validate.validateDivisibleByTen(money);
     Map<Coin, Integer> coins = Coin.calculateCoint(money);
@@ -30,15 +32,30 @@ public class VendingMachineService {
   }
 
   // 상품 입력
-  public void inputProduct(String input) {
+  public List<Product> inputProducts(String input) {
+    List<Product> products = new ArrayList<>();
     List<String> items = Converter.inputSplitItemDelimiter(input);
     for(String item : items) {
       Validate.validateBracket(item);
       String substringItem = Converter.inputSubstring(item);
       List<String> product = Converter.inputSplitDetailDelimiter(substringItem);
-      Validate.validateItemNumber(product);
+      products.add(listToProduct(product));
     }
+    return products;
   }
+
+  // List<String>을 Product로 변환
+  public static Product listToProduct(List<String> product) {
+    Validate.validateItemNumber(product);
+    Validate.validateNumber(product.get(1));
+    Validate.validateNumber(product.get(2));
+
+    return new Product(product.get(0),
+            Integer.parseInt(product.get(1)),
+            Integer.parseInt(product.get(2)));
+  }
+
+
 
 
 
