@@ -37,7 +37,7 @@ public class Validate {
 
   // 아이템이 []로 감싸져 있는지 검증
   public static void validateBracket(String input) {
-    if(!input.startsWith(Delimiter.ITEM_START.getSymbol()) || !input.startsWith(Delimiter.ITEM_END.getSymbol())) {
+    if(!input.startsWith(Delimiter.ITEM_START.getSymbol()) || !input.endsWith(Delimiter.ITEM_END.getSymbol())) {
       throw new IllegalArgumentException(ErrorMessage.PRODUCT_FORM.getMessage());
     }
   }
