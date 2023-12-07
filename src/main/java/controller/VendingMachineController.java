@@ -1,6 +1,7 @@
 package controller;
 
 import constant.Coin;
+import jdk.internal.util.xml.impl.Input;
 import model.Product;
 import model.VendingMachineCoin;
 import service.VendingMachineService;
@@ -41,7 +42,12 @@ public class VendingMachineController {
     List<Product> products = vendingMachineService.inputProducts(input);
   }
 
-  
+  // 투입 금액 입력
+  public int inputCustomerMoney() {
+    String input = InputView.inputCustomerMoney();
+    return vendingMachineService.inputCustomerMoney(input);
+  }
+
 
 
 }

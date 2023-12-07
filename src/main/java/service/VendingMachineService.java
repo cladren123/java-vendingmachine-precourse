@@ -45,7 +45,7 @@ public class VendingMachineService {
   }
 
   // List<String>을 Product로 변환
-  public static Product listToProduct(List<String> product) {
+  public Product listToProduct(List<String> product) {
     Validate.validateItemNumber(product);
     Validate.validateNumber(product.get(1));
     Validate.validateNumber(product.get(2));
@@ -54,6 +54,15 @@ public class VendingMachineService {
             Integer.parseInt(product.get(1)),
             Integer.parseInt(product.get(2)));
   }
+
+  // 투입 금액 변환
+  public int inputCustomerMoney(String input) {
+    Validate.validateNumber(input);
+    int customerMoney = Converter.stringToInteger(input);
+    Validate.validatePositiveNumber(customerMoney);
+    return customerMoney;
+  }
+
 
 
 
