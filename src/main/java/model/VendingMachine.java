@@ -16,7 +16,7 @@ public class VendingMachine {
 
   // 현재 금액이 최저 금액보다 높고 살 상품이 있는지 확인
   public boolean checkStatus(int money) {
-    return checkMoney(money) && checkQuantity();
+    return checkMoney(money) && checkQuantity(money);
   }
 
   // 현재 금액으로 살 수 있는 가격의 상품이 있는지 확인
@@ -26,8 +26,9 @@ public class VendingMachine {
   }
 
   // 구매 할 상품이 있는지 수량 확인
-  public boolean checkQuantity() {
+  public boolean checkQuantity(int money) {
     return products.stream()
+            .filter(product -> product.canBuy(money))
             .anyMatch(Product::hasQuantity);
   }
 

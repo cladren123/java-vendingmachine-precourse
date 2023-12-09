@@ -7,6 +7,41 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ProductTest {
 
+  @Test
+  @DisplayName("생성자 검사 - 유효한 검사")
+  void product_valid() {
+    // given
+    String name = "콜라";
+    int cost = 1500;
+    int quantitiy = 20;
+
+    // when
+    assertDoesNotThrow(() -> new Product(name, cost, quantitiy));
+  }
+
+  @Test
+  @DisplayName("생성자 검사 - 가격 음수")
+  void product_minus_number() {
+    // given
+    String name = "콜라";
+    int cost = -1500;
+    int quantitiy = 20;
+
+    // when
+    assertThrows(IllegalArgumentException.class, () -> new Product(name, cost, quantitiy));
+  }
+
+  @Test
+  @DisplayName("생성자 검사 - 수량 음수")
+  void product_minus_quantity() {
+    // given
+    String name = "콜라";
+    int cost = 1500;
+    int quantitiy = -20;
+
+    // when
+    assertThrows(IllegalArgumentException.class, () -> new Product(name, cost, quantitiy));
+  }
 
   @Test
   @DisplayName("물건 구매 후 잔돈 반환 - 유효한 입력")

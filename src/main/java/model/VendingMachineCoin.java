@@ -1,6 +1,8 @@
 package model;
 
 import constant.Coin;
+
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -15,9 +17,9 @@ public class VendingMachineCoin {
     this.coins = coins;
   }
 
-  // 현재 보유한 동전 반환
+  // 현재 보유한 동전 반환 - 복사본 생성 후 불변 객체로 만들어 반환
   public Map<Coin, Integer> getCoins() {
-    return new LinkedHashMap<>(coins);
+    return Collections.unmodifiableMap(new LinkedHashMap<>(coins));
   }
 
 
