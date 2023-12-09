@@ -16,8 +16,6 @@ import java.util.List;
 
 public class Converter {
 
-
-
   // input을 money에 맞는지 변환
   public static Integer stringToInteger(String input) {
     return Integer.parseInt(input);

@@ -4,7 +4,9 @@ public enum OutputMessage {
 
   VENDING_MACHINE_COIN("자판기가 보유한 동전"),
   VENDING_MACHINE_COIN_FORMAT("%d원 - %d개"),
-  CHANGES("잔돈");
+  CHANGES("잔돈"),
+  CUSTOMER_MONEY("투입 금액: %d원");
+
 
   private final String message;
 

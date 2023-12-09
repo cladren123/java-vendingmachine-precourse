@@ -9,9 +9,6 @@ public class Product implements Comparable<Product> {
   private final int cost; // 상품 가격
   private int quantity; // 상품 수량
 
-  public int getCost() {
-    return cost;
-  }
 
   public Product(String name, int cost, int quantity) {
     Validate.validatePositiveNumber(cost);
@@ -26,7 +23,7 @@ public class Product implements Comparable<Product> {
   // 상품을 사고 남은 돈을 반환
   public int buy(int money) {
     if(money >= cost) {
-      quantity = -1;
+      quantity -= 1;
       return money - cost;
     }
     throw new IllegalArgumentException(ErrorMessage.NOT_ENOUGH_MONEY.getMessage());
